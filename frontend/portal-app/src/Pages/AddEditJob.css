@@ -1,0 +1,105 @@
+/* === FORM CONTAINER === */
+.form-container {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2.5rem 3rem;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 10px 0 #d0d4e0, 0 10px 30px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+.form-container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 0 #bcc0d0, 0 14px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* === HEADER === */
+.form-container h2 {
+  text-align: center;
+  color: #1a1f36;
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.8rem;
+}
+
+/* === FORM STRUCTURE === */
+.job-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* === FORM GROUPS === */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.4rem;
+  color: #374151;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* === INPUTS & SELECTS === */
+.job-form input,
+.job-form select {
+  padding: 0.9rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #111827;
+  background-color: #f9fafb;
+  transition: all 0.2s ease;
+}
+
+.job-form input:focus,
+.job-form select:focus {
+  outline: none;
+  border-color: #1e4dd8;
+  box-shadow: 0 0 0 3px rgba(30, 77, 216, 0.15);
+  background: #ffffff;
+}
+
+/* === BUTTON === */
+.submit-btn {
+  margin-top: 1rem;
+  background: linear-gradient(135deg, #1e4dd8, #173baf);
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 8px 0 #1537a6, 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 0 #1537a6, 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 600px) {
+  .form-container {
+    padding: 1.8rem;
+    margin: 1.5rem;
+  }
+
+  .form-container h2 {
+    font-size: 1.6rem;
+  }
+
+  .job-form input,
+  .job-form select,
+  .submit-btn {
+    font-size: 0.95rem;
+  }
+}

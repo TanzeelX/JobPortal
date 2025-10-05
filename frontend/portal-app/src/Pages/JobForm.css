@@ -1,0 +1,98 @@
+.form-container {
+  max-width: 550px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+.form-container h2 {
+  text-align: center;
+  color: #1a1f36;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.8rem;
+  letter-spacing: 0.3px;
+}
+
+
+.job-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.job-form input,
+.job-form select,
+.job-form textarea {
+  padding: 0.9rem 8rem;
+  border-radius: 10px;
+  border: 1.5px solid #d1d5db;
+  background: #f9fafb;
+  color: #1a1f36;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+  margin: 12px;
+}
+
+
+.job-form input:focus,
+.job-form select:focus,
+.job-form textarea:focus {
+  background: #fff;
+}
+
+.job-form input::placeholder,
+.job-form textarea::placeholder {
+  color: #9ca3af;
+}
+
+
+.job-form select {
+  cursor: pointer;
+  background: #f9fafb;
+}
+
+
+.job-form button {
+  background: #1e4dd8;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  padding: 0.95rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.job-form button:hover {
+  background: #173bb0;
+  transform: translateY(-2px);
+}
+
+.job-form button:active {
+  transform: translateY(0);
+}
+
+
+@media (max-width: 600px) {
+  .form-container {
+    margin: 1.5rem;
+    padding: 1.2rem;
+  }
+
+  .job-form input,
+  .job-form select,
+  .job-form textarea,
+  .job-form button {
+    font-size: 0.95rem;
+  }
+
+  .form-container h2 {
+    font-size: 1.5rem;
+  }
+}
